@@ -1,3 +1,8 @@
 def square_array(array)
-  return array.collect {|x| x*x}
+  index = 0;
+  array.each do |element|
+    array[index] = element*element
+    index+=1
+  end
+  return array
 end
